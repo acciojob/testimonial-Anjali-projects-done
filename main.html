@@ -47,7 +47,7 @@
         }
 
         /* Testimonial Section Styling */
-        <div class="testimonial-container">
+        .testimonial-container {
             padding: 20px;
             background-color: #f5f5f5;
             margin-top: 20px;
@@ -105,8 +105,8 @@
         // Cypress Debugging Test
         console.log("Checking element counts for debugging...");
         console.log("H1 count: ", document.querySelectorAll("h1").length);
-        console.log("Div count: ", document.querySelectorAll("div").length);
-        console.log("P count: ", document.querySelectorAll("p").length);
+        console.log("Div count inside .testimonial-container: ", document.querySelectorAll(".testimonial-container div").length);
+        console.log("P count inside article: ", document.querySelectorAll("article p").length);
     </script>
 </body>
 </html>
