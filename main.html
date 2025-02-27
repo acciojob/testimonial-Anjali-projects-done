@@ -47,7 +47,7 @@
         }
 
         /* Testimonial Section Styling */
-        .testimonial-container {
+        <div class="testimonial-container">
             padding: 20px;
             background-color: #f5f5f5;
             margin-top: 20px;
@@ -69,12 +69,14 @@
 </head>
 <body>
     <h1>Styled Webpage</h1>
+    
     <article>
         <p>First paragraph...</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         <p>Nullam dictum felis eu pede mollis pretium...</p>
         <p>Nam eget dui. Etiam rhoncus. Maecenas tempus...</p>
     </article>
+    
     <ul>
         <li>First Item</li>
         <li>Second Item</li>
@@ -98,5 +100,13 @@
             <p class="author">- Mark Wilson</p>
         </div>
     </div>
+
+    <script>
+        // Cypress Debugging Test
+        console.log("Checking element counts for debugging...");
+        console.log("H1 count: ", document.querySelectorAll("h1").length);
+        console.log("Div count: ", document.querySelectorAll("div").length);
+        console.log("P count: ", document.querySelectorAll("p").length);
+    </script>
 </body>
 </html>
